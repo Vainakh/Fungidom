@@ -1,14 +1,23 @@
-import React from 'react';
-import './Header.css'
+import React, {Component} from 'react';
+import './Header.css';
+import Logo from './Logo/Logo';
+import NavigationItems from './Navigation/NavigationItems/NavigationItems';
+import Authentication from './Authentication/Authentication';
 
-const header = () => {
-  return (
-  <div>
-    <div className="Header">
-      Header
-    </div>
-  </div>
-  )
-};
+class Header extends Component {
+  render() {
+    return (
+      <div>
+        <div className="Header">
+          Header
+          <Logo></Logo>
+          <NavigationItems></NavigationItems>
+          <Authentication></Authentication>
+        </div>
+      </div>
+      )
+    };
+  }
+  
 
-export default header;
+export default Header;

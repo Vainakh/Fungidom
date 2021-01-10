@@ -1,0 +1,21 @@
+.Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font: 20px;
+  background:white;
+  padding: 30px;
+}
+
+img {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 75px;
+}
+
+.Name {
+  
+}

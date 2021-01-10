@@ -1,6 +1,7 @@
 .Items {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  width: 70%;
+  flex-flow: row wrap;
+  margin: -420px 438px;
 }

@@ -4,7 +4,7 @@ import './Main.css';
 const main = () => {
   return (
     <div className="Main">
-      Main
+      <div className="Slogan">Organic, Nutritious and simply Delicious!</div>
     </div>
   )
 };

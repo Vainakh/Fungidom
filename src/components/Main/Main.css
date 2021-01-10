@@ -1,6 +1,10 @@
 .Main {
   background: yellow;
-  width: 90%;
-  height: 474px;
+  width: 100%;
+  height: 750px;
   margin: 0 auto;
+  background-image: url('./../../assets/images/mainMushroom.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
 }
