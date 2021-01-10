@@ -1,7 +1,8 @@
 .Items {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
   flex-flow: row wrap;
-  margin: -420px 438px;
+  margin: 0 auto;
+  justify-content: center;
 }

@@ -9,7 +9,6 @@ class Header extends Component {
     return (
       <div>
         <div className="Header">
-          Header
           <Logo></Logo>
           <NavigationItems></NavigationItems>
           <Authentication></Authentication>

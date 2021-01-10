@@ -1,0 +1,15 @@
+.About {
+  font-family: 'Niconne', cursive;
+  font-size: 50px;
+  text-align: center;
+  padding: 150px 0 100px 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Cowmessage {
+  font-family: 'Rancho', cursive;
+  font-size: 50px;
+  text-align: center;
+  padding: 0px 0 100px 0;
+}
