@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+#added as per docs 01/11/2021
+.idea
 
 # testing
 /coverage
