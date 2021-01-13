@@ -1,0 +1,48 @@
+/* .Footer {
+  width: 100%;
+  height: 300px;
+  background: red;
+  margin: 100px auto;
+  background-image: url('./../../assets/images/item10.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+} */
+
+.FooterInfo {
+  background: url('./../../assets/images/item10.jpg');
+  height: 300px;
+  width: 100%;
+  position: relative;
+  top: 350px;
+  text-align: center;
+  padding: 50px 0 0 0;
+  font-size: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.PreFooter {
+  font-family: 'Niconne', cursive;
+  font-size: 50px;
+  text-align: center;
+  padding: 150px 0 0 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.FooterImage {
+  width: 100px;
+  height: 82px;
+  background: url("../../assets/images/mushroom.svg");
+  background-size: 100px 82px;
+  position: relative;
+  left: 1400px;
+  top: -26px;
+}
+
+.FooterUl {
+  position: relative;
+  top: 200px;
+}
