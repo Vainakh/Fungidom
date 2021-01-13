@@ -1,8 +1,12 @@
 import React from 'react';
 import './Authentication.css';
+import Auth from '../../../containers/Auth/Auth';
 
-const authentication = () => (
-  <div className="Authentication">Log In / Log Out</div>
+const authentication = (props) => (
+  <div className="Authentication">
+    <Auth
+    style={props.style}></Auth>
+  </div>
 )
 
 export default authentication;
