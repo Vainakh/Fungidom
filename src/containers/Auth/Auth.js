@@ -10,11 +10,10 @@ class Auth extends Component {
     this.state = {
       currentView: "External"
     }
-    this.changeViewHandler = this.changeViewHandler.bind(this);
+    this.onClickHandler = this.onClickHandler.bind(this);
   }
 
   onClickHandler() {
-    console.log("Clicked");
     let view;
 
     view = (this.state.currentView === "External") ? "Internal" : "External";

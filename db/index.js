@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost:27017/newdb`, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost:27017/auth`, { useNewUrlParser: true });
 
 const db = mongoose.connection;
 
@@ -12,24 +12,27 @@ db.once('open', ()=> {
 });
 
 const inputSchema = mongoose.Schema({
-    input: String,
+    username: String,
+    password: String
 });
 
 const Model = new mongoose.model('db', inputSchema);
 
 const save = (data, callback) => {
     let model = Model({
-        input: data
+        username: data.username,
+        password: data.password
     });
 
     model.save((err, res) => {
+        console.log(res.username, res.password); 
         if (err) {
             callback(err);
         } else {
             callback(null, res)
         }
     }); 
-    console.log(`Step4 in, ${data} saved in database`) 
+    
 };
 
 module.exports = {

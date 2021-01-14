@@ -8,7 +8,6 @@ const postData = (data, callback) => {
           callback(null, res);  
       }
   });
-  console.log("Step3 in, controller here");
 };
 
 module.exports = {

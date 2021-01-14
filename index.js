@@ -32,10 +32,21 @@ app.post('/data', (req, res) => {
       res.status(500).send();
     } else {
       res.status(201).send();
-      console.log(`Step2 in, server works, posting ${data} to database`)
+      console.log(`Step2 in, server works, posting ${data} to database`);
     }
   });
 })
+
+app.post('/auth', (req, res) => {
+  let data = req.body;
+  db.postData(data, (err) => {
+    if (err) {
+      res.status(500).send();
+    } else {
+      res.status(201).send();
+    }
+  });
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
